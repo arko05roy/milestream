@@ -2,6 +2,12 @@
 
 Complete after HACD Labs approves your package. Requires your wallet — no one else can sign for you.
 
+## Issuer wallet (receive address)
+
+`1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V`
+
+Withdraw HAC to this address. Also registered as the designated address in `launch_spec.json` for the pilot phase.
+
 ## Prerequisites checklist
 
 - [ ] Hacash wallet created at https://wallet.hacash.org (seed phrase backed up offline)

@@ -22,8 +22,8 @@
     "units_per_hacd_lot": 5000,
     "stack_cost_hac_per_hacd": 50,
     "network_fee_required": true,
-    "designated_address_required": false,
-    "designated_address": "",
+    "designated_address_required": true,
+    "designated_address": "1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V",
     "first_phase_hacd_lots": 20,
     "public_phase_hacd_lots": 180,
     "removal_effect": "burn"
