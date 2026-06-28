@@ -4,63 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MileStream — Contractor credentials on HACD</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <p class="eyebrow">HACD Incubator Season 2 · GrowStreams</p>
-    <h1>MileStream</h1>
-    <p class="lead">PoW-backed contractor credentials + GrowStreams milestone payments for small gigs.</p>
-    <div class="actions">
-      <a class="btn primary" href="https://hacd.it/launchpad" target="_blank" rel="noopener">HACD Launchpad</a>
-      <a class="btn" href="https://www.growstreams.xyz/app/projects/HACD" target="_blank" rel="noopener">GrowStreams Quest</a>
-      <a class="btn" href="https://hacd.it/incubator" target="_blank" rel="noopener">Apply to Incubator</a>
+  <nav class="topnav">
+    <a href="#/" class="brand">MileStream</a>
+    <div class="nav-links">
+      <a href="#/form" data-route="form">Form credential</a>
+      <a href="#/directory" data-route="directory">Directory</a>
+      <a href="#/gig" data-route="gig">Start gig</a>
     </div>
-  </header>
+    <span class="demo-badge">Demo</span>
+  </nav>
 
-  <main>
-    <section>
-      <h2>The problem</h2>
-      <p>Freelancers on informal platforms deliver work and never get paid. Client profiles and “verified” badges are free to fake.</p>
-    </section>
-
-    <section>
-      <h2>How it works</h2>
-      <ol>
-        <li><strong>Form</strong> — Stack MSTR on HACD (50 HAC per lot). Your 6-letter HACD name becomes your Contractor ID.</li>
-        <li><strong>Verify</strong> — Formation is permanent on <a href="https://explorer.hacash.org" target="_blank" rel="noopener">explorer.hacash.org</a>.</li>
-        <li><strong>Get paid</strong> — Clients fund milestone streams via <a href="https://www.growstreams.xyz" target="_blank" rel="noopener">GrowStreams</a> (e.g. 25% start, 75% delivery).</li>
-      </ol>
-    </section>
-
-    <section class="stats">
-      <div class="stat"><span class="num">200</span><span class="label">HACD lots</span></div>
-      <div class="stat"><span class="num">5,000</span><span class="label">MSTR per lot</span></div>
-      <div class="stat"><span class="num">50</span><span class="label">HAC formation cost</span></div>
-      <div class="stat"><span class="num">1M</span><span class="label">MSTR hard cap</span></div>
-    </section>
-
-    <section>
-      <h2>Contractor directory</h2>
-      <p class="note">Only on-chain formed contractors are listed. No mock entries.</p>
-      <div id="contractor-list" class="contractor-list empty">
-        <p>No contractors formed on-chain yet.</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>Issuer</h2>
-      <p>
-        Arko Roy —
-        <a href="mailto:itsarko619@gmail.com">itsarko619@gmail.com</a> —
-        <a href="https://x.com/notarkoroy" target="_blank" rel="noopener">@notarkoroy</a> —
-        <a href="https://github.com/arko05roy/milestream" target="_blank" rel="noopener">GitHub</a>
-      </p>
-    </section>
-  </main>
+  <div id="app"></div>
 
   <footer>
     <p>MSTR is a utility credential, not an investment. MileStream is not a licensed escrow service. Payments run through GrowStreams.</p>
+    <p class="issuer">
+      Arko Roy —
+      <a href="mailto:itsarko619@gmail.com">itsarko619@gmail.com</a> —
+      <a href="https://x.com/notarkoroy" target="_blank" rel="noopener">@notarkoroy</a>
+    </p>
   </footer>
 
   <script src="app.js"></script>

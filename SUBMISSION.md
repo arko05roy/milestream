@@ -6,6 +6,17 @@
 **Repo:** https://github.com/arko05roy/milestream  
 **Date:** 2026-06-28
 
+## One folder — everything to submit
+
+```
+submission/
+```
+
+Path: `~/Desktop/MileStream/submission/`  
+ZIP: `~/Desktop/MileStream/milestream-submission.zip`
+
+See `submission/README.md` for per-file review status.
+
 ## Submit to HACD Labs
 
 Per `CAMPAIGN.md` in the HACD issuance skill repo, submit either:

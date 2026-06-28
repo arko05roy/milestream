@@ -23,7 +23,8 @@ MileStream pairs **PoW-backed contractor credentials** (MSTR on HACD) with **Gro
 
 ## Links
 
-- [Contractor directory (site)](https://arko05roy.github.io/milestream/)
+- [Contractor directory (site)](https://arko05roy.github.io/milestream/) — static GitHub Pages
+- **Next.js app** — `web/` — full sprint demo (run `cd web && npm run dev`)
 - [HACD Launchpad](https://hacd.it/launchpad)
 - [HACD Incubator application](https://hacd.it/incubator)
 - [GrowStreams HACD quest](https://www.growstreams.xyz/app/projects/HACD)

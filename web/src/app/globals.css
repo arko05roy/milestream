@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0a0c12;
+  --slate: #141820;
+  --elevated: #1a1e2a;
+  --frost: #ece8df;
+  --stream: #d4922a;
+  --stream-glow: #f0b84d;
+  --proof: #6a9ec7;
+  --ghost: #5c6370;
+  --border: #2a3040;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-slate: var(--slate);
+  --color-elevated: var(--elevated);
+  --color-frost: var(--frost);
+  --color-stream: var(--stream);
+  --color-stream-glow: var(--stream-glow);
+  --color-proof: var(--proof);
+  --color-ghost: var(--ghost);
+  --color-border: var(--border);
+  --font-display: var(--font-syne);
+  --font-sans: var(--font-outfit);
+  --font-mono: var(--font-ibm-plex-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--ink);
+  color: var(--frost);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-syne), system-ui, sans-serif;
+}
+
+/* Ambient stream gradient — signature atmosphere */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 80% 50% at 70% -10%, rgba(212, 146, 42, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at 10% 100%, rgba(106, 158, 199, 0.05), transparent);
+  z-index: -1;
+}
+
+@keyframes stream-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+.animate-stream-pulse {
+  animation: stream-pulse 1.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-stream-pulse {
+    animation: none;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+  }
+}
