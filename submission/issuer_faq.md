@@ -30,11 +30,17 @@ The unique 6-letter HACD name used for that lot, registered on-chain when you St
 
 ## Does MileStream hold client payments?
 
-No. Milestone payments are designed to run via GrowStreams (https://www.growstreams.xyz). MSTR is a credential asset, not an escrow contract. MileStream is not a licensed escrow service.
+No. MSTR is a credential asset, not an escrow contract. Milestone payments are planned via Hacash HVM smart contracts (in development, not live at launch). MileStream is not a licensed escrow service.
+
+## What is live at launch vs roadmap?
+
+**At launch:** HACD Stack formation — MSTR balance, Contractor ID, directory listing, public proof pages.
+
+**Roadmap:** Hacash HVM milestone payment contracts (e.g. 25% on job start, 75% on delivery).
 
 ## Is the contractor directory live?
 
-The directory site is live at https://arko05roy.github.io/milestream/. It lists only contractors with verified on-chain Stack formation. No entries yet — directory populates after participants Stack on the Launchpad.
+The contractor directory is in the Next.js app (`web/`). Run locally or deploy — see `web/README.md`. It lists only contractors with verified on-chain Stack formation. No entries yet — directory populates after participants Stack on the Launchpad.
 
 ## Is there a reserved allocation?
 
@@ -59,10 +65,6 @@ No. No profit, yield, price floor, or return is guaranteed.
 ## Where can I verify my formation?
 
 explorer.hacash.org or https://hacd.it/launchpad after confirmation.
-
-## How do I join the GrowStreams quest?
-
-https://www.growstreams.xyz/app/projects/HACD
 
 ## How do I apply to the HACD incubator?
 

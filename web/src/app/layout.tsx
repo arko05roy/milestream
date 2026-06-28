@@ -26,7 +26,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "MileStream — Contractor credentials on HACD",
   description:
-    "PoW-backed contractor credentials and GrowStreams milestone payments for $50–$500 gigs.",
+    "PoW-backed contractor credentials on HACD. Hacash HVM milestone payments on the roadmap.",
 };
 
 export default function RootLayout({

@@ -2,37 +2,32 @@
 
 **Issuer:** Arko Roy — itsarko619@gmail.com — @notarkoroy
 
-This folder contains everything HACD Labs requires. Nothing else.
+This folder contains everything HACD Labs requires.
 
 ## Step 1 — Submit the package
 
 Choose **one**:
 
-- Upload **`milestream-submission.zip`** (parent folder)
-- Or link **https://github.com/arko05roy/milestream** (must include this same folder contents at repo root or in `submission/`)
+- Upload **`milestream-submission.zip`** from the repo root
+- Or link **https://github.com/arko05roy/milestream** (this `submission/` folder must be in the repo)
 
 ## Step 2 — Fill the incubator form
 
 https://hacd.it/incubator
 
-Copy answers from `../APPLICATION.md` in the repo root.
+Copy answers from `APPLICATION.md` in this folder.
 
 Attach the ZIP or repo link.
 
-## What is NOT in this folder (on purpose)
+## After HACD Labs approves you
 
-| Item | Why separate |
-|------|----------------|
-| `web/` Next.js app | Product demo — deploy separately, link in form if ready |
-| `PROGRESS.md` | Internal notes |
-| Mock demo data | Never submit |
+See `WALLET_LAUNCH.md` — wallet, HAC, HACD, Stack on Launchpad.
 
-## After HACD Labs approves you (top 10)
+Designated address: `1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V`
 
-See `../WALLET_LAUNCH.md` — wallet, HAC, HACD, Stack on Launchpad.
+## Outside this folder
 
-## GrowStreams quest (you, in browser)
-
-https://www.growstreams.xyz/app/projects/HACD
-
-Not part of the ZIP. Do this yourself with your wallet.
+| Item | Location |
+|------|----------|
+| Next.js web app | `../web/` — deploy separately, link when live |
+| Progress notes | `../PROGRESS.md` |

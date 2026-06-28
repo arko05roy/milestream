@@ -5,9 +5,9 @@
 - Project name: MileStream
 - Ticker / asset symbol: MSTR
 - Category: utility
-- One-sentence description: MileStream is a contractor-credential Stack Asset that pairs PoW-backed identity with GrowStreams milestone payments so freelancers get paid for small gigs.
+- One-sentence description: MileStream is a contractor-credential Stack Asset that forms PoW-backed Contractor IDs on HACD, with milestone payments planned via Hacash HVM smart contracts.
 - Founder / team: Arko Roy (solo founder)
-- Website: https://arko05roy.github.io/milestream/
+- Website: https://github.com/arko05roy/milestream (Next.js app in `web/`)
 - X / community links: @notarkoroy
 - Contact: itsarko619@gmail.com
 
@@ -33,6 +33,7 @@
 - Who receives or controls the stack cost? Stack cost goes to the Hacash network protocol per Stack mechanism rules.
 - Is any HAC burned, locked, paid, or reserved? HAC is paid as formation cost per protocol. First phase reserves 20 lots for pilot contractors only.
 - Estimated network fee: standard Hacash network transaction fee per lot
+- Designated address: 1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V
 
 ## 5. Launch rules
 
@@ -45,35 +46,35 @@
 
 ## 6. Utility
 
-- What can holders do at launch? Verify MSTR balance and Contractor ID on the Hacash explorer and HACD Launchpad.
-- What may holders do during the sprint? Contractor directory listing and GrowStreams milestone templates (in development).
-- What is already built? Complete 8-document issuance package; validated launch_spec.json; contractor directory site (lists on-chain formations only — none yet).
-- What depends on future development? GrowStreams pilot gigs (3–5 real milestone streams), on-chain Stack formation on Launchpad, client review system.
-- What should not be promised publicly? Investment returns, token price appreciation, guaranteed client volume, licensed escrow status.
+- What can holders do at launch? Verify MSTR balance and Contractor ID on the Hacash explorer and HACD Launchpad. List in contractor directory.
+- What may holders do during the sprint? Hacash HVM milestone payment contract development (roadmap).
+- What is already built? Complete issuance package; validated launch_spec.json; Next.js web app (`web/`); brand assets (logo, cover, banner, token image).
+- What depends on future development? HVM milestone payment contracts, on-chain Stack formation on Launchpad, client review system.
+- What should not be promised publicly? Investment returns, token price appreciation, guaranteed client volume, licensed escrow status, live HVM payments at launch.
 
 ## 7. Community and communication
 
 - Target audience: Freelancers doing $50–$500 gigs; clients hiring on Telegram/Discord; remote workers
-- Main narrative: Get paid. Prove you're real. Form your credential on HACD, stream payments on GrowStreams.
+- Main narrative: Prove you're real. Form your credential on HACD. Milestone payments via Hacash HVM (roadmap).
 - Tone: practical / problem-solving
-- Key announcement message: MileStream launches contractor credentials on HACD with milestone payments on GrowStreams.
+- Key announcement message: MileStream launches contractor credentials on HACD. HVM milestone payments on the roadmap.
 - Three things you want users to understand:
   1. MSTR is a credential, not an investment.
-  2. Payments flow through GrowStreams, not the token contract.
+  2. At launch: HACD Stack = identity. Roadmap: HVM = milestone payments.
   3. Formation cost makes fake profiles expensive.
 
 ## 8. Risk and compliance
 
 - Legal review required: Yes (payment-adjacent product)
 - Risk disclosures prepared: Yes
-- Promises to avoid: yield, guaranteed income, price floor, licensed escrow claims
+- Promises to avoid: yield, guaranteed income, price floor, licensed escrow claims, live HVM at launch
 
 ## 9. Campaign links
 
-- GrowStreams quest: https://www.growstreams.xyz/app/projects/HACD
 - HACD incubator application: https://hacd.it/incubator
 - HACD Launchpad: https://hacd.it/launchpad
+- Hacash explorer: https://explorer.hacash.org
 
 ---
 
-*Completed intake for Arko Roy. Issuer confirmed 2026-06-28. Final Launchpad parameters pending HACD Labs review.*
+*Completed intake for Arko Roy. Issuer confirmed 2026-06-28. Updated 2026-06-28 per HACD Labs HVM positioning feedback.*

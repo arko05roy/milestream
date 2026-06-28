@@ -4,7 +4,7 @@
 
 **Freelancer trust, formed through HACD.**
 
-MileStream issues MSTR — a hybrid contractor credential where each HACD becomes a permanent Contractor ID, paired with GrowStreams milestone payment streaming for small gigs.
+MileStream issues MSTR — a hybrid contractor credential where each HACD becomes a permanent Contractor ID. Milestone payments are planned via Hacash HVM smart contracts.
 
 ## What is MileStream?
 
@@ -15,7 +15,9 @@ MileStream addresses two linked problems:
 
 MileStream issues contractor credentials through the HACD Stack protocol. Every MSTR unit is formed through a real HACD container and a real HAC formation cost. Each lot's unique HACD name becomes a **Contractor ID**.
 
-For payments, MileStream is designed to use **GrowStreams** milestone streaming — clients fund upfront, contractors receive payouts as work progresses.
+**At launch**, MileStream focuses on HACD Stack-based contractor credentials.
+
+**Next stage**, MileStream will use Hacash HVM contracts for milestone payments — for example, 25% on job start and 75% on delivery.
 
 There are exactly 200 Stack lots. Each lot uses 1 HACD and 50 HAC to form 5,000 MSTR plus one Contractor ID. Once all 200 lots are filled, no more credentials can be created.
 
@@ -41,16 +43,19 @@ One Stack action gives you two linked things:
 
 You do not transact twice. A single Stack forms both.
 
-## How milestone payments work (product layer)
+## How milestone payments work (roadmap — Hacash HVM)
 
-MileStream does not hold client payments in the token. Payments are designed to run through GrowStreams:
+MileStream does not hold client payments in the token. Future milestone payments are designed to run through **Hacash HVM smart contracts**:
 
 1. Client and contractor agree on scope, price, and milestones.
-2. Client opens a payment stream on GrowStreams (e.g. 25% on start, 75% on delivery).
+2. Client funds an HVM milestone contract (e.g. 25% on start, 75% on delivery).
 3. Contractor completes work; client confirms delivery.
-4. Remaining stream releases per GrowStreams rules.
+4. Remaining contract balance releases per HVM contract rules.
 
-This integration is under development during the incubator sprint.
+HACD Stack = contractor identity formation.  
+HVM contracts = milestone payment execution (future).
+
+This layer is in development and is not live at launch.
 
 ## How Stack works
 
@@ -75,17 +80,18 @@ This integration is under development during the incubator sprint.
 - Target date: 2026-07-01
 - Platform: https://hacd.it/launchpad
 - Phase: designated first (20 pilot lots) then public (180 lots)
+- Designated address: 1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V
 - Status: draft (pending HACD Labs review)
 - Issuer: Arko Roy — itsarko619@gmail.com — @notarkoroy
 
 ## Utility
 
-**At formation (on-chain, verifiable today):**
+**At launch (on-chain, verifiable today):**
 - MSTR balance and Contractor ID recorded on Hacash.
+- Contractor directory listing with public proof pages.
 
-**During incubator sprint (in development):**
-- Contractor directory listing.
-- GrowStreams milestone payment templates for pilot gigs.
+**Roadmap (in development):**
+- Hacash HVM milestone payment contracts for pilot gigs.
 
 Planned (not guaranteed):
 - Client review system tied to Contractor IDs.
@@ -99,7 +105,7 @@ Yes. Each Stack lot requires 1 HACD.
 Yes. 50 HAC stack cost per lot plus network fee.
 
 **Does MSTR hold my client payments?**
-No. Payments are designed to stream via GrowStreams. MSTR is a credential, not an escrow contract.
+No. MSTR is a credential, not an escrow contract. Milestone payments are planned via Hacash HVM smart contracts (not live at launch).
 
 **Is MSTR an investment?**
 No. MSTR is a utility credential Stack Asset. No price, return, or liquidity is guaranteed.
@@ -108,7 +114,7 @@ No. MSTR is a utility credential Stack Asset. No price, return, or liquidity is 
 
 MSTR is a utility Stack Asset issued through the HACD Stack protocol. It is not an investment product. No price appreciation, liquidity, listing, yield, or profit is guaranteed.
 
-MileStream is not a licensed escrow service, money transmitter, or dispute arbiter. Payment streaming depends on GrowStreams infrastructure and participant behavior.
+MileStream is not a licensed escrow service, money transmitter, or dispute arbiter. HVM milestone payment features depend on Hacash smart-contract development and participant behavior.
 
 Formation cost (HAC) is non-refundable. Product features depend on development during the incubator sprint.
 

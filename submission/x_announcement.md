@@ -10,14 +10,14 @@ Building MileStream to fix both:
 
 → Contractor credentials formed on HACD (200 slots, 50 HAC each)
 → Each HACD name = permanent Contractor ID
-→ Milestone payments via @GrowwStreams
+→ Milestone payments via Hacash HVM smart contracts (roadmap)
 → Formation cost makes spam expensive
 
 Not a token mint. A credential you form.
 
-Incubator sprint — launching before July 1.
+Launchpad prep — launching before July 1.
 
-#HACD #GrowStreams
+#HACD #Hacash
 
 — Arko Roy (@notarkoroy)
 
@@ -34,8 +34,8 @@ The $200 logo gig on Telegram:
 The problem isn't talent. It's trust + payment timing.
 
 MileStream:
-- HACD formation = costly-to-fake contractor ID
-- GrowStreams = milestone payment streams (25/75 split)
+- HACD Stack = costly-to-fake contractor ID (live at launch)
+- Hacash HVM = milestone payment contracts (25/75 split, roadmap)
 
 Building this for HACD Incubator Season 2.
 
@@ -43,14 +43,14 @@ Building this for HACD Incubator Season 2.
 
 ## 3. Build-in-public Day 1
 
-Day 1 of @GrowwStreams HACD sprint:
+Day 1 of HACD Incubator sprint:
 
 ✓ Cloned HACD issuance skill repo
-✓ MileStream launch package (8 docs)
+✓ MileStream launch package (8 docs + brand assets)
 ✓ launch_spec.json validated
 → 1,000,000 MSTR / 200 lots / 50 HAC per lot
 
-Next: contractor directory + GrowStreams pilot gigs.
+Next: Launchpad listing + HVM milestone contract design.
 
 Follow along: @notarkoroy
 
@@ -66,13 +66,13 @@ Follow along: @notarkoroy
 
 3/ Each lot = unique Contractor ID (your 6-letter HACD name).
 
-4/ Payments: milestone streams via GrowStreams. Not held in the token.
+4/ At launch: HACD Stack = identity. Roadmap: HVM contracts for milestone payments. Not held in the token.
 
 5/ Issuer: @notarkoroy — building during HACD Incubator Season 2.
 
 6/ Not an investment. Infrastructure for $50–$500 gigs.
 
-Form your credential. Stream your payments. Ship your work.
+Form your credential. Ship your work. Get paid — on the HVM roadmap.
 
 ---
 

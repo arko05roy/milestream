@@ -30,26 +30,27 @@ Withdraw HAC to this address. Also registered as the designated address in `laun
 3. Enter your HACD name(s) — these become your Contractor IDs
 4. Confirm Stack transaction in your wallet
 5. Verify on https://explorer.hacash.org
-6. Add yourself to the directory — edit `docs/app.js` in the repo:
+6. Add yourself to the directory — edit `../web/src/lib/on-chain.ts`:
 
-```js
-const CONTRACTORS = [
+```ts
+export const ON_CHAIN_CONTRACTORS: ContractorRecord[] = [
   {
     contractorId: "YOUR6L",  // your HACD name
     role: "Founder / Developer",
-    explorerUrl: "https://explorer.hacash.org/..."  // real tx link
-  }
+    explorerUrl: "https://explorer.hacash.org/...",  // real tx link
+    mstrAmount: 5000,
+    stackCostHac: 50,
+    formedAt: "2026-07-01T12:00:00.000Z",
+    status: "formed",
+  },
 ];
 ```
 
-7. Commit and push — directory updates at https://arko05roy.github.io/milestream/
+7. Deploy or run the Next.js app — see `../web/README.md`
 
-## GrowStreams pilot gig
+## HVM milestone contracts (roadmap)
 
-1. Open https://www.growstreams.xyz/app/projects/HACD
-2. Connect wallet and complete quest tasks
-3. Create milestone stream for a pilot gig (25% start / 75% delivery)
-4. Document in X build-in-public thread (see `x_announcement.md`)
+Milestone payments are planned via Hacash HVM smart contracts (e.g. 25% start / 75% delivery). Not live at launch — see `stack_design.md` and `contractor_credential.md`.
 
 ## Get HAC
 

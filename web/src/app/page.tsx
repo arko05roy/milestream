@@ -12,7 +12,7 @@ export default function HomePage() {
           {/* Dispatch eyebrow with run number */}
           <p className="mb-5 flex items-center gap-4">
             <span className="border-l-2 border-stream pl-3 text-[0.65rem] font-medium uppercase tracking-[0.18em] text-stream">
-              HACD Incubator · GrowStreams
+              HACD Incubator · MileStream
             </span>
             <span className="font-mono text-[0.6rem] tabular-nums text-ghost/40">
               #RUN-0001
@@ -26,9 +26,9 @@ export default function HomePage() {
           </h1>
 
           <p className="mt-6 max-w-md text-base leading-relaxed text-ghost">
-            Freelancers on informal platforms deliver work and never get paid.
-            MileStream pairs PoW-backed contractor credentials with milestone
-            payment streams for $50–$500 gigs.
+            MileStream forms PoW-backed contractor credentials on HACD.
+            Milestone payments via Hacash HVM smart contracts are on the
+            roadmap for $50–$500 gigs.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -84,7 +84,7 @@ export default function HomePage() {
               The solution
             </p>
             <h2 className="font-display text-2xl font-semibold text-frost sm:text-3xl">
-              Credential + stream
+              Credential + contract
             </h2>
             <ol className="mt-6 space-y-5">
               {[
@@ -101,10 +101,7 @@ export default function HomePage() {
                 },
                 {
                   step: "Paid",
-                  copy: null,
-                  link: { href: "https://www.growstreams.xyz", label: "GrowStreams" },
-                  suffix: " — 25% on job start, 75% on delivery confirmation.",
-                  prefix: "Clients fund milestone streams via ",
+                  copy: "Roadmap: Hacash HVM milestone contracts — 25% on job start, 75% on delivery confirmation. Not live at launch.",
                 },
               ].map(({ step, copy, link, prefix, suffix }) => (
                 <li key={step} className="grid gap-2 sm:grid-cols-[4.5rem_1fr] sm:gap-5">

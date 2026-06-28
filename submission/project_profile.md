@@ -2,7 +2,7 @@
 
 ## One-liner
 
-MileStream is a contractor-credential asset formed through HACD Stack, where each unique HACD becomes a permanent Contractor ID and pairs with GrowStreams milestone payment streaming so freelancers get paid after delivery.
+MileStream is a contractor-credential asset formed through HACD Stack, where each unique HACD becomes a permanent Contractor ID. Milestone payments are planned via Hacash HVM smart contracts.
 
 ## Category
 
@@ -23,15 +23,19 @@ MileStream is a hybrid asset issued across 200 HACD lots.
 
 Removing a Stack releases the HACD but burns the 5,000 MSTR tied to that lot and retires the Contractor ID.
 
-## Product layer (in development)
+## Product layers
 
-MileStream the product will connect clients and contractors for milestone-based work:
+**At launch — HACD Stack credentials:**
+- Form MSTR and Contractor ID on the Launchpad.
+- Verify formation on explorer.hacash.org.
+- List in the contractor directory with public proof pages.
 
+**Roadmap — Hacash HVM milestone payments:**
 1. Client and contractor agree on scope and milestones.
-2. Client funds a payment stream via GrowStreams (e.g. 25% on start, 75% on delivery).
+2. Client funds an HVM milestone contract (e.g. 25% on start, 75% on delivery).
 3. Contractor's HACD-formed Contractor ID appears in the directory with on-chain formation proof.
 
-The HACD token addresses identity spam and fake credentials. GrowStreams addresses payment timing and client ghosting.
+The HACD token addresses identity spam and fake credentials. HVM contracts address payment timing and client ghosting.
 
 ## Why HACD
 
@@ -57,10 +61,11 @@ The HACD token addresses identity spam and fake credentials. GrowStreams address
 - Issuance structure: defined
 - Stack cost: defined (50 HAC / HACD)
 - Supply: defined (1,000,000 MSTR across 200 lots, 5,000 per lot)
+- Designated address: 1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V
 - Eight-document issuance package: complete
 - launch_spec.json: validated (draft)
-- Contractor directory site: live at https://arko05roy.github.io/milestream/ (on-chain listings only; no formations yet)
-- GrowStreams pilot gigs: not yet run (sprint deliverable)
+- Next.js web app: `web/` — formation demo, directory, proof pages (deploy or run locally)
+- HVM milestone contracts: not yet deployed (roadmap)
 - Launchpad listing: pending HACD Labs review
 - Legal review: required before publication
 

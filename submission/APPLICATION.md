@@ -14,7 +14,7 @@ MSTR
 
 ## One-sentence description
 
-MileStream is a contractor-credential Stack Asset on HACD paired with GrowStreams milestone payments so freelancers get paid for small gigs and clients can trust non-fake profiles.
+MileStream is a contractor-credential Stack Asset on HACD that forms PoW-backed Contractor IDs, with milestone payments planned via Hacash HVM smart contracts.
 
 ## Category
 
@@ -26,8 +26,8 @@ Freelancers on Telegram, Discord, and informal platforms deliver work and never 
 
 ## Solution
 
-- HACD hybrid token (MSTR + Contractor ID): formation cost filters spam, 200 capped lots
-- GrowStreams: milestone payment streams (25% start, 75% delivery)
+- HACD hybrid token (MSTR + Contractor ID): formation cost filters spam, 200 capped lots — **live at launch**
+- Hacash HVM: milestone payment contracts (25% start, 75% delivery) — **roadmap**
 
 ## Why HACD (not a normal token)
 
@@ -44,6 +44,10 @@ HYBRID — fungible MSTR + unique Contractor ID per HACD name
 ## Stack cost
 
 50 HAC per HACD
+
+## Designated address
+
+1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V
 
 ## Launch date target
 
@@ -65,29 +69,26 @@ itsarko619@gmail.com
 
 https://github.com/arko05roy/milestream
 
-## GrowStreams quest
-
-https://www.growstreams.xyz/app/projects/HACD
-
 ## What's built
 
-- Complete 8-document issuance package
-- Validated launch_spec.json
-- Contractor directory site (site/index.html) — lists only real on-chain formations
+- Complete issuance package + brand assets (logo, cover, banner, token image)
+- Validated launch_spec.json with designated address
+- Contractor directory app in `web/` — lists only real on-chain formations
+- contractor_credential.md — Launchpad credential explanation
 
-## What's in development (sprint week)
+## What's in development (roadmap)
 
-- GrowStreams pilot gigs (3–5 milestone streams)
+- Hacash HVM milestone payment contracts
 - On-chain Stack formation on HACD Launchpad
 
 ## Utility at launch
 
-On-chain MSTR balance and Contractor ID verifiable on explorer. Directory listing after formation. GrowStreams payment templates during sprint.
+On-chain MSTR balance and Contractor ID verifiable on explorer. Directory listing after formation. HVM milestone payments are roadmap, not live at launch.
 
 ## What we do NOT promise
 
-Investment returns, price appreciation, guaranteed liquidity, licensed escrow status
+Investment returns, price appreciation, guaranteed liquidity, licensed escrow status, live HVM payments at launch
 
 ---
 
-*Arko Roy — itsarko619@gmail.com*
+*Issuer: Arko Roy. Updated per HACD Labs feedback.*

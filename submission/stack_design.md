@@ -67,13 +67,16 @@ If a participant removes the Stack from a HACD lot, the 5,000 MSTR tied to that 
 - The **Contractor ID** is the unique HACD name and identifies which contractor formed which lot.
 - Both are produced by the same single Stack action.
 
-## Payment streaming (product layer — in development)
+## Payment layer (roadmap — Hacash HVM)
 
-Milestone payments are designed to run via GrowStreams (https://www.growstreams.xyz):
+Future milestone payments are designed to run via **Hacash HVM smart contracts**:
 
 - Proposed template: 25% released at job start, 75% at delivery confirmation.
-- Client funds stream in USDT on Vara via GrowStreams.
+- Client funds an on-chain HVM milestone contract on Hacash.
 - The Stack token does not hold escrow funds.
+
+HACD Stack = contractor identity formation.  
+HVM contracts = milestone payment execution (future).
 
 ---
 

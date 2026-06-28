@@ -7,6 +7,7 @@
 - [x] X: @notarkoroy
 - [x] GitHub: https://github.com/arko05roy
 - [x] No placeholder or fake contact data in launch_spec.json
+- [x] Designated address: 1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V
 
 ## Formation logic
 
@@ -24,21 +25,24 @@
 - [x] No profit or investment return promises
 - [x] Formation cost described as cost basis reference, not floor price
 - [x] Risk disclosure present
-- [x] GrowStreams integration not described as token yield
+- [x] HVM integration not described as token yield
+- [x] HVM payments described as roadmap, not live at launch
 - [x] MileStream not described as licensed escrow
-- [x] Directory and pilots described as in development, not live
+- [x] Directory described as live; HVM contracts as in development
 - [x] No exchange listing guarantee
 
 ## Launch readiness
 
 - [x] Eight-document package complete
+- [x] Brand assets: logo, cover, banner, token image
 - [x] launch_spec.json passes validate_launch_spec.py (draft mode)
 - [x] issuer_confirmed — Arko Roy (2026-06-28)
+- [x] HVM positioning applied per HACD Labs feedback (2026-06-28)
 - [ ] hacd_labs_reviewed — pending HACD Labs
 - [ ] Legal review — required before publication
-- [x] Contractor directory site live — on-chain listings only (empty until Stack formation)
+- [x] Next.js web app in `web/` — directory, formation demo, proof pages
 - [ ] On-chain contractor entries in directory — after Launchpad Stack
-- [ ] GrowStreams pilot gigs run — sprint deliverable
+- [ ] HVM milestone contracts deployed — roadmap deliverable
 - [ ] On-chain Stack formation on Launchpad — sprint deliverable
 
 ## Validator
@@ -48,9 +52,9 @@
 
 ## Campaign
 
-- [x] GrowStreams quest URL documented: https://www.growstreams.xyz/app/projects/HACD
 - [x] HACD incubator URL: https://hacd.it/incubator
 - [x] Launchpad URL: https://hacd.it/launchpad
+- [x] Hacash explorer: https://explorer.hacash.org
 
 ---
 

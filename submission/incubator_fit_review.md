@@ -19,18 +19,20 @@ Strong fit
 - **PoW provenance**: Each credential is tied to a mined HACD container.
 - **Scarcity signal**: 200 founding slots communicates a reviewable cohort to clients.
 
-## GrowStreams alignment
+## HVM alignment (HACD-native payment roadmap)
 
-- MileStream's payment layer is designed to use GrowStreams for milestone streaming — aligned with the quest sponsor at https://www.growstreams.xyz/app/projects/HACD.
-- HACD handles trust and identity; GrowStreams handles payment flow. Clear separation.
+- **At launch:** HACD Stack forms contractor credentials — MSTR balance + permanent Contractor ID.
+- **Roadmap:** Hacash HVM smart contracts for milestone payments (e.g. 25% on job start, 75% on delivery).
+- HACD handles trust and identity; HVM handles payment execution. Fully HACD-native stack.
+- Copy must not imply the token holds escrow funds or that HVM payments are live at launch.
 
 ## Main concerns
 
-- Payment streaming is a product integration, not enforced by the Stack protocol. Copy must not imply the token holds escrow funds.
+- HVM milestone payments are a product integration, not enforced by the Stack protocol. Copy must not imply live at launch.
 - MileStream is not a licensed escrow service or dispute arbiter.
 - Hybrid complexity: copy must separate fungible MSTR from unique Contractor ID.
 - First-phase 20 lots require defined pilot contractor eligibility.
-- Contractor directory and GrowStreams pilots are sprint deliverables, not live today.
+- Contractor directory is live; HVM contracts are not yet deployed.
 
 ## Required issuer confirmations
 
@@ -38,12 +40,12 @@ Strong fit
 - Confirm 5,000 MSTR per lot (→ 1,000,000 total) is final.
 - Confirm max 5 HACD per participant at Launchpad level.
 - Confirm pilot eligibility rules for the first 20 lots.
-- Confirm GrowStreams pilot scope for sprint week.
+- Confirm designated address: 1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V.
 - Confirm issuer identity with HACD Labs: Arko Roy, itsarko619@gmail.com.
 
 ## Recommended next step
 
-Proceed to HACD Labs review. Build contractor directory and run GrowStreams pilot gigs during the sprint before public phase opens.
+Proceed to Launchpad material preparation. Build contractor directory entries after on-chain Stack formation. Develop HVM milestone payment contracts as Phase 2.
 
 ---
 

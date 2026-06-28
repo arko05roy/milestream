@@ -74,9 +74,9 @@ function GigForm() {
   return (
     <>
       <PageHeader
-        eyebrow="GrowStreams milestone"
+        eyebrow="HVM milestone (roadmap)"
         title="Fund a gig"
-        lead="Clients fund a payment stream: 25% on job start, 75% on delivery confirmation."
+        lead="Demo of the planned 25% / 75% milestone split. Live payments will use Hacash HVM smart contracts."
       />
 
       <div className="mb-8 border border-border bg-track/50 p-6">
@@ -84,16 +84,9 @@ function GigForm() {
       </div>
 
       <p className="mb-6 text-sm text-ghost">
-        This demo simulates stream creation. Live payments use{" "}
-        <a
-          href="https://www.growstreams.xyz"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-proof hover:text-stream"
-        >
-          GrowStreams
-        </a>{" "}
-        on Vara.
+        This demo simulates milestone funding. Live payments will run through{" "}
+        <span className="text-frost">Hacash HVM smart contracts</span> (in
+        development, not live at launch).
       </p>
 
       {!gig ? (
@@ -124,7 +117,7 @@ function GigForm() {
             />
           </div>
           <div>
-            <label className="mb-1.5 block text-sm text-ghost">Total amount (USDT)</label>
+            <label className="mb-1.5 block text-sm text-ghost">Total amount (HAC)</label>
             <input
               type="number"
               required
@@ -146,25 +139,25 @@ function GigForm() {
           </div>
 
           <ButtonNative type="submit" variant="primary">
-            Create stream (demo)
+            Create contract (demo)
           </ButtonNative>
         </form>
       ) : (
         <div className="animate-fade-up space-y-6">
           <div className="border-l-[3px] border-stream bg-elevated/60 p-5 sm:p-6">
             <h3 className="font-display text-lg font-semibold text-stream">
-              Stream created (demo)
+              Contract created (demo)
             </h3>
             <dl className="mt-4 space-y-3 font-mono text-sm">
               <Row label="Gig" value={gig.title} />
               <Row label="Contractor" value={gig.contractorId} />
-              <Row label="Total" value={`$${gig.amount} USDT`} />
-              <Row label="On start" value={`$${gig.milestones[0].amount} (25%)`} />
-              <Row label="On delivery" value={`$${gig.milestones[1].amount} (75%)`} />
+              <Row label="Total" value={`${gig.amount} HAC`} />
+              <Row label="On start" value={`${gig.milestones[0].amount} (25%)`} />
+              <Row label="On delivery" value={`${gig.milestones[1].amount} (75%)`} />
               <div className="flex justify-between border-t border-border pt-3">
                 <span className="text-xs uppercase tracking-wider text-ghost">Status</span>
                 <span className="rounded-md border border-stream/50 bg-stream/10 px-2 py-0.5 text-xs text-stream">
-                  demo — not on GrowStreams
+                  demo — HVM not deployed
                 </span>
               </div>
             </dl>
@@ -173,17 +166,13 @@ function GigForm() {
           {contractor && <FormationReceipt record={contractor} />}
 
           <p className="text-sm text-ghost">
-            For live streams, fund via GrowStreams after wallet connect.
+            Live milestone payments will use Hacash HVM smart contracts after
+            deployment.
           </p>
           <div className="flex flex-wrap gap-3">
-            <a
-              href="https://www.growstreams.xyz/app/projects/HACD"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex rounded-lg bg-stream px-4 py-2.5 text-sm font-medium text-ink hover:bg-stream-glow"
-            >
-              Open GrowStreams
-            </a>
+            <Button href="https://hacd.it/launchpad" variant="primary">
+              HACD Launchpad
+            </Button>
             <Button
               href={`/proof/${gig.contractorId}?demo=1`}
               variant="secondary"

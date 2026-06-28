@@ -2,50 +2,56 @@
 
 **One folder. Everything HACD Labs needs.**
 
-## Your submission folder
-
-```
-/Users/arkoroy/Desktop/MileStream/submission/
-```
-
-**ZIP (upload this):** `/Users/arkoroy/Desktop/MileStream/milestream-submission.zip`
+**Issuer:** Arko Roy — itsarko619@gmail.com — @notarkoroy  
+**Repo:** https://github.com/arko05roy/milestream
 
 ## Submit
 
 1. Go to https://hacd.it/incubator
-2. Fill the form — answers in `../APPLICATION.md`
-3. Attach **`milestream-submission.zip`** OR repo link
+2. Fill the form — copy-paste answers from `APPLICATION.md`
+3. Attach **`milestream-submission.zip`** (repo root) OR link the GitHub repo
 
-That's it for the official package.
+See `SUBMIT.md` for step-by-step instructions.
 
-## Files in the folder (reviewed 2026-06-28)
+## Files in this folder
 
-| File | Verdict |
+| File | Purpose |
 |------|---------|
-| `launch_spec.json` | PASS — validator OK, issuer real, math correct |
-| `issuer_intake_form.md` | PASS — fixed website URL + honest "what's built" |
-| `incubator_fit_review.md` | PASS |
-| `project_profile.md` | PASS — directory = site live, empty until Stack |
-| `stack_design.md` | PASS — math 200×5000=1M |
-| `launchpad_copy.md` | PASS — no banned language |
-| `issuer_faq.md` | PASS — directory honest |
-| `x_announcement.md` | PASS — drafts only, no false claims |
-| `review_checklist.md` | PASS — unchecked items are honestly pending |
-| `validation_output.txt` | PASS — fresh validator run |
-| `SUBMIT.md` | Instructions only — not required by HACD |
+| `launch_spec.json` | Machine-readable spec (validated) |
+| `issuer_intake_form.md` | Incubator intake answers |
+| `incubator_fit_review.md` | HACD fit analysis |
+| `project_profile.md` | Project one-pager |
+| `stack_design.md` | Token / Stack design |
+| `launchpad_copy.md` | Launchpad-facing copy |
+| `issuer_faq.md` | FAQ for participants |
+| `contractor_credential.md` | Contractor ID explanation |
+| `x_announcement.md` | X announcement drafts |
+| `review_checklist.md` | Pre-submit checklist |
+| `validation_output.txt` | Validator pass output |
+| `APPLICATION.md` | Incubator form copy-paste answers |
+| `WALLET_LAUNCH.md` | On-chain Stack steps after approval |
+| `assets/` | logo, cover, banner, token image |
 
-## Unchecked items in review_checklist (correct — do NOT check these)
+## Validate locally
 
-These are **supposed** to stay unchecked until they actually happen:
+```bash
+python3 /path/to/hacd-incubator-ai-issuance-skill/scripts/validate_launch_spec.py submission/launch_spec.json
+```
 
-- `hacd_labs_reviewed` — HACD Labs does this
-- `Legal review` — before Launchpad go-live
-- `GrowStreams pilot gigs` — you run real streams separately
-- `On-chain Stack formation` — after approval + wallet
-- `--strict` validator — after HACD sets reviewed flag
+## Not in this folder
 
-## Not in this folder (do not zip these)
+| Item | Location |
+|------|----------|
+| Next.js web app | `../web/` |
+| Internal progress notes | `../PROGRESS.md` |
 
-- `web/` — Next.js app (deploy separately)
-- `PROGRESS.md` — your notes
-- Mock demo contractors — never submit
+## Pending (do not check off prematurely)
+
+- `hacd_labs_reviewed` — HACD Labs
+- Legal review — before Launchpad go-live
+- HVM milestone contracts — roadmap
+- On-chain Stack formation — after Launchpad approval
+
+---
+
+*Reviewed 2026-06-28. HVM positioning applied per HACD Labs feedback.*

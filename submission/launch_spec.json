@@ -4,8 +4,8 @@
     "name": "MileStream",
     "ticker": "MSTR",
     "category": "utility",
-    "description": "MileStream is a hybrid contractor-credential asset formed through HACD Stack, pairing PoW-backed on-chain identity with milestone payment streaming for freelancers and clients.",
-    "website": "https://arko05roy.github.io/milestream/",
+    "description": "MileStream is a hybrid contractor-credential asset formed through HACD Stack. At launch, each lot forms MSTR and a permanent Contractor ID. Milestone payments are planned via Hacash HVM smart contracts.",
+    "website": "https://github.com/arko05roy/milestream",
     "x": "@notarkoroy",
     "contact": "itsarko619@gmail.com"
   },
@@ -14,7 +14,7 @@
     "total_supply": 1000000,
     "decimals": 0,
     "unit_name": "MSTR",
-    "utility_summary": "Each MSTR unit represents one share of a contractor credential formed through a HACD Stack lot. The unique HACD name acts as a permanent Contractor ID. Holders can verify formation on the Hacash explorer. Contractor directory listing and GrowStreams milestone payment templates are product features under development for the incubator sprint."
+    "utility_summary": "Each MSTR unit represents one share of a contractor credential formed through a HACD Stack lot. The unique HACD name acts as a permanent Contractor ID. Holders can verify formation on the Hacash explorer. Contractor directory listing is available at launch. Hacash HVM milestone payment contracts (e.g. 25% start / 75% delivery) are a Phase 2 product layer in development."
   },
   "stack": {
     "total_hacd_lots": 200,
@@ -38,9 +38,9 @@
   },
   "copy": {
     "headline": "Freelancer trust, formed through HACD.",
-    "subheadline": "MileStream issues MSTR — a hybrid credential where each HACD becomes a permanent Contractor ID, paired with milestone payment streaming for small gigs.",
-    "short_description": "MSTR is formed across 200 HACD lots at 50 HAC each. Each lot forms 5,000 MSTR and one unique Contractor ID. Total supply is 1,000,000 MSTR. Formation cost filters fake profiles. Milestone payments use GrowStreams.",
-    "risk_disclosure": "MSTR is a utility Stack Asset for contractor credentials, not an investment product. No price, liquidity, listing, or return is guaranteed. Payment streaming features depend on product development and GrowStreams infrastructure. Formation cost is non-refundable. MileStream does not provide legal escrow or dispute arbitration. This is a draft structure pending HACD Labs review."
+    "subheadline": "MileStream issues MSTR — a hybrid credential where each HACD becomes a permanent Contractor ID. Milestone payments are planned via Hacash HVM smart contracts.",
+    "short_description": "MSTR is formed across 200 HACD lots at 50 HAC each. Each lot forms 5,000 MSTR and one unique Contractor ID. Total supply is 1,000,000 MSTR. Formation cost filters fake profiles. Hacash HVM milestone contracts are on the roadmap.",
+    "risk_disclosure": "MSTR is a utility Stack Asset for contractor credentials, not an investment product. No price, liquidity, listing, or return is guaranteed. HVM milestone payment features depend on Hacash smart-contract development and are not live at launch. Formation cost is non-refundable. MileStream does not provide legal escrow or dispute arbitration. Final parameters pending HACD Labs review."
   },
   "review": {
     "issuer_confirmed": true,
@@ -48,12 +48,13 @@
     "legal_review_required": true,
     "notes": [
       "Issuer: Arko Roy (itsarko619@gmail.com, @notarkoroy, github.com/arko05roy).",
-      "HACD Labs Incubator Cohort 2 / GrowStreams quest: https://www.growstreams.xyz/app/projects/HACD",
+      "HACD Labs Incubator Cohort 2: https://hacd.it/incubator",
       "Hybrid FT+NFT: MSTR is fungible credential weight; HACD name is unique Contractor ID.",
-      "GrowStreams integration is product-layer; not enforced by the Stack protocol.",
+      "Launch = HACD Stack contractor identity. Roadmap = Hacash HVM milestone payment contracts.",
+      "Designated address: 1C9883DEKbLKLfxmdavGJq6nr8MVe6LS6V",
       "First phase (20 lots) reserved for pilot contractors during sprint week.",
       "Maximum 5 HACD per participant must be enforced at Launchpad level.",
-      "Contractor directory and GrowStreams pilot flows are not yet live; sprint deliverables."
+      "Contractor directory live; HVM payment contracts not yet deployed."
     ]
   }
 }

@@ -4,7 +4,8 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-6 px-5 py-8 sm:px-8 md:grid-cols-[1fr_auto] md:items-end">
         <p className="max-w-lg text-sm leading-relaxed text-ghost">
           MSTR is a utility credential, not an investment. MileStream is not a
-          licensed escrow service. Payments run through GrowStreams.
+          licensed escrow service. HVM milestone payments are on the roadmap
+          and not live at launch.
         </p>
         <div className="text-sm text-ghost md:text-right">
           <p className="font-medium text-frost/80">Arko Roy</p>
