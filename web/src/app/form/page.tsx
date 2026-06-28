@@ -75,7 +75,7 @@ export default function FormPage() {
         lead={`Your 6-letter HACD name becomes a permanent Contractor ID. Stack cost: ${STACK_COST_HAC} HAC → ${MSTR_PER_LOT.toLocaleString()} MSTR.`}
       />
 
-      <div className="mb-10 rounded-xl border border-border bg-slate/40 p-6">
+      <div className="mb-10 border border-border bg-track/50 p-6">
         <StreamRail active={record ? "verify" : forming ? "form" : "form"} />
       </div>
 
@@ -93,45 +93,77 @@ export default function FormPage() {
       </p>
 
       {!record && (
-        <form onSubmit={handleSubmit} className="max-w-lg space-y-5">
-          <Field label="HACD name (Contractor ID)" hint="6 uppercase letters A–Z">
-            <input
-              id="hacd-name"
-              value={contractorId}
-              onChange={(e) =>
-                setContractorId(
-                  e.target.value.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 6),
-                )
-              }
-              placeholder="ARKORO"
-              autoComplete="off"
-              className="w-full rounded-lg border border-border bg-ink px-3 py-2.5 font-mono text-frost placeholder:text-ghost/50 focus:border-stream focus:outline-none focus:ring-1 focus:ring-stream"
-            />
-          </Field>
+        <form onSubmit={handleSubmit} className="max-w-lg space-y-6">
+          {/* Credential ID — plate-scale input */}
+          <div>
+            <div className="mb-2 flex items-baseline justify-between gap-3">
+              <label
+                htmlFor="hacd-name"
+                className="text-[0.65rem] font-medium uppercase tracking-[0.16em] text-ghost"
+              >
+                HACD name · Contractor ID
+              </label>
+              <span className="font-mono text-[0.65rem] text-ghost/60">
+                {contractorId.length}/6 chars
+              </span>
+            </div>
+            <div className="relative">
+              <input
+                id="hacd-name"
+                value={contractorId}
+                onChange={(e) =>
+                  setContractorId(
+                    e.target.value.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 6),
+                  )
+                }
+                placeholder="ARKORO"
+                autoComplete="off"
+                className="w-full border-2 border-border bg-track/60 py-4 text-center font-mono text-3xl font-bold tracking-[0.45em] text-stream placeholder:text-ghost/25 placeholder:tracking-[0.3em] focus:border-stream focus:outline-none focus:bg-track/80"
+              />
+              {/* Live preview under input */}
+              <div
+                className={`mt-0 border border-t-0 border-border/60 bg-ink/60 px-4 py-2 transition-opacity duration-200 ${contractorId.length > 0 ? "opacity-100" : "opacity-0"}`}
+              >
+                <p className="font-mono text-[0.65rem] text-ghost/70">
+                  <span className="text-stream">{contractorId.padEnd(6, "_")}</span>
+                  <span className="ml-3 text-ghost/50">→ Contractor ID on HACD</span>
+                </p>
+              </div>
+            </div>
+            <p className="mt-1.5 text-[0.65rem] text-ghost/60">6 uppercase letters A–Z. Permanent after formation.</p>
+          </div>
+
           <Field label="Role">
             <input
               value={role}
               onChange={(e) => setRole(e.target.value)}
               placeholder="Frontend developer"
-              className="w-full rounded-lg border border-border bg-ink px-3 py-2.5 text-frost placeholder:text-ghost/50 focus:border-stream focus:outline-none focus:ring-1 focus:ring-stream"
+              className="w-full border border-border bg-ink px-3 py-2.5 text-frost placeholder:text-ghost/40 focus:border-stream/70 focus:outline-none focus:ring-1 focus:ring-stream/30"
             />
           </Field>
-          <Field label="Skills" hint="Optional">
+          <Field label="Skills" hint="Optional — shown in directory and proof page">
             <input
               value={skills}
               onChange={(e) => setSkills(e.target.value)}
               placeholder="React, design systems"
-              className="w-full rounded-lg border border-border bg-ink px-3 py-2.5 text-frost placeholder:text-ghost/50 focus:border-stream focus:outline-none focus:ring-1 focus:ring-stream"
+              className="w-full border border-border bg-ink px-3 py-2.5 text-frost placeholder:text-ghost/40 focus:border-stream/70 focus:outline-none focus:ring-1 focus:ring-stream/30"
             />
           </Field>
+
           {error && (
-            <p className="text-sm text-stream" role="alert">
-              {error}
-            </p>
+            <div className="border border-stream/40 bg-stream/8 px-4 py-3" role="alert">
+              <p className="font-mono text-xs text-stream">{error}</p>
+            </div>
           )}
-          <ButtonNative type="submit" variant="primary" disabled={forming}>
-            Stack MSTR
-          </ButtonNative>
+
+          <div className="flex items-center gap-4">
+            <ButtonNative type="submit" variant="primary" disabled={forming}>
+              Stack MSTR →
+            </ButtonNative>
+            <p className="text-[0.65rem] text-ghost/60">
+              50 HAC stack cost → 5,000 MSTR
+            </p>
+          </div>
         </form>
       )}
 

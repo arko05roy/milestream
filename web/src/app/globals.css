@@ -4,21 +4,27 @@
   --ink: #0a0c12;
   --slate: #141820;
   --elevated: #1a1e2a;
+  --track: #1c2130;
   --frost: #ece8df;
   --stream: #d4922a;
   --stream-glow: #f0b84d;
+  --stream-dim: rgba(212, 146, 42, 0.12);
   --proof: #6a9ec7;
   --ghost: #5c6370;
   --border: #2a3040;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.45, 0, 0.55, 1);
 }
 
 @theme inline {
   --color-ink: var(--ink);
   --color-slate: var(--slate);
   --color-elevated: var(--elevated);
+  --color-track: var(--track);
   --color-frost: var(--frost);
   --color-stream: var(--stream);
   --color-stream-glow: var(--stream-glow);
+  --color-stream-dim: var(--stream-dim);
   --color-proof: var(--proof);
   --color-ghost: var(--ghost);
   --color-border: var(--border);
@@ -47,16 +53,67 @@ body {
   font-family: var(--font-syne), system-ui, sans-serif;
 }
 
-/* Ambient stream gradient — signature atmosphere */
+/* Hidden SVG grain filter */
+body > svg.grain-filter {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* Mile-marker track texture */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 80% 50% at 70% -10%, rgba(212, 146, 42, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at 10% 100%, rgba(106, 158, 199, 0.05), transparent);
+    radial-gradient(ellipse 70% 45% at 85% -5%, rgba(212, 146, 42, 0.07), transparent),
+    radial-gradient(ellipse 50% 35% at 5% 105%, rgba(106, 158, 199, 0.04), transparent);
+  z-index: -2;
+}
+
+/* Subtle column-rule grid + animated scan band */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 79px,
+      rgba(42, 48, 64, 0.28) 79px,
+      rgba(42, 48, 64, 0.28) 80px
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(212, 146, 42, 0.025) 50%,
+      transparent 100%
+    );
+  background-size: 80px 100%, 100% 240px;
+  animation: scan-band 14s linear infinite;
+  mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
   z-index: -1;
+}
+
+@keyframes scan-band {
+  0%   { background-position: 0 -240px, 0 -240px; }
+  100% { background-position: 0 -240px, 0 100vh; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::after {
+    animation: none;
+    background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 79px,
+      rgba(42, 48, 64, 0.28) 79px,
+      rgba(42, 48, 64, 0.28) 80px
+    );
+  }
 }
 
 @keyframes stream-pulse {
@@ -70,7 +127,7 @@ body::before {
 }
 
 .animate-stream-pulse {
-  animation: stream-pulse 1.4s ease-in-out infinite;
+  animation: stream-pulse 1.4s var(--ease-in-out-smooth) infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -82,7 +139,7 @@ body::before {
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(14px);
   }
   to {
     opacity: 1;
@@ -91,11 +148,120 @@ body::before {
 }
 
 .animate-fade-up {
-  animation: fade-up 0.5s ease-out both;
+  animation: fade-up 0.55s var(--ease-out-expo) both;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .animate-fade-up {
     animation: none;
   }
+}
+
+@keyframes fade-up-delayed {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up-delayed {
+  animation: fade-up-delayed 0.65s var(--ease-out-expo) 0.12s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up-delayed {
+    animation: none;
+  }
+}
+
+@keyframes flow-dot {
+  0% {
+    left: 8%;
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+  }
+  92% {
+    opacity: 1;
+  }
+  100% {
+    left: 92%;
+    opacity: 0;
+  }
+}
+
+.animate-flow-dot {
+  animation: flow-dot 4s var(--ease-in-out-smooth) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-flow-dot {
+    animation: none;
+    left: 50%;
+    opacity: 0.6;
+  }
+}
+
+@keyframes ticker-in {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-ticker-in {
+  animation: ticker-in 0.4s var(--ease-out-expo) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker-in {
+    animation: none;
+  }
+}
+
+/* Receipt perforation edge */
+.perforated-edge {
+  background-image: radial-gradient(circle at 0 50%, var(--ink) 3px, transparent 3.5px);
+  background-size: 8px 8px;
+  background-repeat: repeat-y;
+  background-position: left center;
+}
+
+/* Stagger delays for list entrance animations */
+.stagger-1 { animation-delay: 0.05s; }
+.stagger-2 { animation-delay: 0.10s; }
+.stagger-3 { animation-delay: 0.15s; }
+.stagger-4 { animation-delay: 0.20s; }
+.stagger-5 { animation-delay: 0.25s; }
+.stagger-6 { animation-delay: 0.30s; }
+.stagger-7 { animation-delay: 0.35s; }
+.stagger-8 { animation-delay: 0.40s; }
+
+/* Credential ID plate grid watermark */
+.id-plate-grid {
+  background-image:
+    repeating-linear-gradient(0deg, currentColor 0, currentColor 1px, transparent 1px, transparent 22px),
+    repeating-linear-gradient(90deg, currentColor 0, currentColor 1px, transparent 1px, transparent 22px);
+}
+
+@keyframes id-glow {
+  0%, 100% { opacity: 1; text-shadow: 0 0 12px rgba(212, 146, 42, 0.35); }
+  50%       { opacity: 0.85; text-shadow: 0 0 24px rgba(240, 184, 77, 0.55); }
+}
+
+.animate-id-glow {
+  animation: id-glow 3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-id-glow { animation: none; }
 }

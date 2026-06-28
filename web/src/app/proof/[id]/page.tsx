@@ -58,15 +58,35 @@ function ProofContent({ id }: { id: string }) {
 
       <FormationReceipt record={record} />
 
-      <article className="mt-6 rounded-xl border border-border bg-slate/40 p-6">
-        <h2 className="font-display text-lg font-semibold text-frost">
-          Why this can&apos;t be faked
-        </h2>
-        <p className="mt-3 text-sm leading-relaxed text-ghost">
-          Each Contractor ID is tied to a PoW-mined HACD container. Formation cost
-          ({STACK_COST_HAC} HAC) makes mass fake profiles expensive. Formation time
-          cannot be backdated.
-        </p>
+      <article className="mt-6 border border-border bg-elevated/30">
+        <div className="border-b border-border/60 bg-track/50 px-5 py-3">
+          <h2 className="text-[0.65rem] font-medium uppercase tracking-[0.16em] text-ghost">
+            Why this can&apos;t be faked
+          </h2>
+        </div>
+        <div className="divide-y divide-border/40">
+          <div className="flex gap-4 px-5 py-4">
+            <span className="shrink-0 font-mono text-xs text-stream/60">01</span>
+            <p className="text-sm leading-relaxed text-ghost">
+              Each Contractor ID is a PoW-mined HACD container. You can&apos;t register
+              one without spending real compute — no free-tier fake profiles.
+            </p>
+          </div>
+          <div className="flex gap-4 px-5 py-4">
+            <span className="shrink-0 font-mono text-xs text-stream/60">02</span>
+            <p className="text-sm leading-relaxed text-ghost">
+              Formation cost is <span className="font-mono text-frost">{STACK_COST_HAC} HAC</span> per
+              credential. Mass registration is economically hostile by design.
+            </p>
+          </div>
+          <div className="flex gap-4 px-5 py-4">
+            <span className="shrink-0 font-mono text-xs text-stream/60">03</span>
+            <p className="text-sm leading-relaxed text-ghost">
+              Formation time is written to the chain and cannot be backdated. The
+              timestamp is the proof.
+            </p>
+          </div>
+        </div>
       </article>
 
       <div className="mt-6 flex flex-wrap gap-3">

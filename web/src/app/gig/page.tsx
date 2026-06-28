@@ -79,7 +79,7 @@ function GigForm() {
         lead="Clients fund a payment stream: 25% on job start, 75% on delivery confirmation."
       />
 
-      <div className="mb-8 rounded-xl border border-border bg-slate/40 p-6">
+      <div className="mb-8 border border-border bg-track/50 p-6">
         <StreamRail active={gig ? "paid" : "verify"} />
       </div>
 

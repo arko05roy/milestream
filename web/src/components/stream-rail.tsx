@@ -11,7 +11,7 @@ export function StreamRail({ active = null }: { active?: ActiveStep }) {
     <div className="relative w-full" aria-hidden="true">
       <div className="absolute left-[8%] right-[8%] top-5 h-px bg-border" />
       <div
-        className="absolute left-[8%] top-5 h-px bg-stream transition-all duration-700 ease-out motion-reduce:transition-none"
+        className="absolute left-[8%] top-5 h-px origin-left bg-stream transition-[width] duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none"
         style={{
           width:
             activeIndex >= 0
@@ -25,7 +25,7 @@ export function StreamRail({ active = null }: { active?: ActiveStep }) {
           return (
             <li key={step.key} className="flex flex-col items-center gap-2">
               <span
-                className={`flex h-10 w-10 items-center justify-center rounded-full border-2 text-xs font-mono font-medium transition-all duration-500 motion-reduce:transition-none ${
+                className={`flex h-10 w-10 items-center justify-center rounded-full border-2 text-xs font-mono font-medium transition-[border-color,background-color,color,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] motion-reduce:transition-none ${
                   lit
                     ? "border-stream bg-stream/15 text-stream-glow shadow-[0_0_20px_rgba(212,146,42,0.25)]"
                     : "border-border bg-ink text-ghost"
