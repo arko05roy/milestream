@@ -1,0 +1,5 @@
+WARNING: review.hacd_labs_reviewed is not true (expected for a draft)
+OK: launch spec passed validation
+Formation cost reference: 10,000 HAC + network fees
+(1 warning(s) — fine for a draft, resolve before final submission)
+Next: fix any warnings, then re-run with --strict for the final check.

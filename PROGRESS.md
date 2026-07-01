@@ -1,6 +1,6 @@
 # MileStream — Session Progress
 
-**Last updated:** 2026-06-28  
+**Last updated:** 2026-07-01  
 **Issuer:** Arko Roy — itsarko619@gmail.com — [@notarkoroy](https://x.com/notarkoroy)
 
 ---
@@ -23,7 +23,8 @@ All issuance docs, `launch_spec.json`, assets, `APPLICATION.md`, `WALLET_LAUNCH.
 
 ## Not done yet
 
-- [ ] Deploy `web/` and update `submission/launch_spec.json` website URL
+- [x] Product website linked in `submission/launch_spec.json` — https://arko05roy.github.io/milestream/
+- [ ] Redeploy `web/` to GitHub Pages (live site still shows pre-HVM copy)
 - [ ] HACD Labs Launchpad listing
 - [ ] On-chain Stack formation
 - [ ] HVM milestone contracts (roadmap)
